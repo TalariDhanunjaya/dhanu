@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout"
+    android:background="@drawable/backcolour_list"
+    tools:context=".MainActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:id="@+id/logo"
+        android:src="@drawable/logo1" />
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Continue with Google"
+        android:id="@+id/continue_with_Google"
+       android:layout_above="@id/continue_with_Facebook"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        android:drawableStart="@drawable/google"
+        android:layout_marginLeft="30dp"
+        android:layout_centerHorizontal="true"
+        android:drawableLeft="@drawable/google"
+        android:background="@drawable/shape"/>
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Continue with Facebook"
+        android:id="@+id/continue_with_Facebook"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:drawableStart="@drawable/facebook"
+        android:layout_above="@id/register"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/shape"
+        android:drawableLeft="@drawable/facebook" />
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Create Account"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:id="@+id/register"
+        android:onClick="register"
+        android:background="@drawable/shape"
+       android:layout_above="@id/b1"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/b1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="login"
+       android:layout_alignParentBottom="true"
+        android:layout_marginBottom="130dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/shape"
+        android:layout_centerHorizontal="true"
+        android:text="login" />
+
+</RelativeLayout>

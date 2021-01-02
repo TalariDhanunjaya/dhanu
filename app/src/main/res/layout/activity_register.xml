@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/register_lay"
+    android:background="@drawable/backcolour_list"
+    tools:context=".register">
+    <TextView
+        android:id="@+id/head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Register"
+        android:layout_marginTop="70dp"
+        android:textSize="50dp"
+        />
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rtl1"
+       android:layout_below="@id/head"
+        android:layout_marginTop="20dp"
+        app:hintEnabled="true"
+        android:hint="Enter your name"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        app:boxStrokeErrorColor="@color/green"
+        app:boxStrokeWidth="2dp"
+        app:boxStrokeWidthFocused="4dp"
+        android:enabled="true"
+        app:errorEnabled="true"
+        app:shapeAppearance="@color/design_default_color_on_primary"
+
+        app:startIconDrawable="@drawable/ic_baseline_perm_identity_24"
+        app:hintTextColor="@color/black"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+
+            >
+
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rtl2"
+        android:layout_below="@id/rtl1"
+        android:layout_marginTop="20dp"
+        app:hintEnabled="true"
+        android:hint="email"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        app:boxStrokeErrorColor="@color/green"
+        app:boxStrokeWidth="2dp"
+        app:boxStrokeWidthFocused="4dp"
+        android:enabled="true"
+        app:errorEnabled="true"
+        app:shapeAppearance="@color/design_default_color_on_primary"
+
+        app:startIconDrawable="@drawable/ic_baseline_email_24"
+        app:hintTextColor="@color/black"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+
+            >
+
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:id="@+id/rtl3"
+        app:hintEnabled="true"
+        android:layout_below="@id/rtl2"
+        android:hint="password"
+        android:layout_marginTop="20dp"
+        app:boxStrokeErrorColor="@color/green"
+        app:boxStrokeWidth="2dp"
+        app:helperTextEnabled="true"
+        app:boxStrokeWidthFocused="4dp"
+        android:enabled="true"
+        app:errorEnabled="true"
+        app:hintTextColor="@color/black"
+        app:passwordToggleEnabled="true"
+        app:shapeAppearance="@color/design_default_color_on_primary"
+
+        app:startIconDrawable="@drawable/ic_baseline_lock_24"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:id="@+id/rtl4"
+        app:hintEnabled="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/rtl3"
+        android:hint="Confirm password"
+        app:boxStrokeErrorColor="@color/green"
+        app:boxStrokeWidth="2dp"
+        app:helperTextEnabled="true"
+        app:boxStrokeWidthFocused="4dp"
+        android:enabled="true"
+        app:errorEnabled="true"
+        app:hintTextColor="@color/black"
+        app:passwordToggleEnabled="true"
+        app:shapeAppearance="@color/design_default_color_on_primary"
+
+        app:startIconDrawable="@drawable/ic_baseline_lock_24"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:onClick="back"
+        android:layout_below="@id/rtl4"
+        android:background="@drawable/shape"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/br1"/>
+
+</RelativeLayout>
